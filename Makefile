@@ -1,2 +1,14 @@
+OBJS = csTemplate.cpp
+
+CC = g++
+
+OBJ_NAME = csTemplate
+
 all:
-	g++ CS1570_template.cpp -o csTemplate
+	${CC} ${OBJS} -o ${OBJ_NAME}
+
+run:
+	./${OBJ_NAME}
+
+clean:
+	rm ${OBJ_NAME}
